@@ -21,12 +21,12 @@ const Header = ({
   const search = async (e) => {
     e.preventDefault();
     if (valueToSearch) {
-      e.target.reset();
       history.push(`/${basicState.type}/${valueToSearch.toLowerCase()}`);
       setValueToSearch("");
       window.scrollTo(0, 0);
-      dispatch({ type: "LOADING", payload: true });
     }
+    setValueToSearch("");
+    e.target.reset();
   };
 
   return (
