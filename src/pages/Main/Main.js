@@ -17,7 +17,7 @@ const Main = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen px-5">
+    <div className="flex flex-col min-h-screen">
       <div className="flex justify-center items-center flex-grow bg-fire px-5">
         <div
           className="flex flex-col items-center cursor-pointer my-5"
