@@ -17,8 +17,8 @@ const Main = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="flex justify-center items-center flex-grow bg-fire">
+    <div className="flex flex-col min-h-screen px-5">
+      <div className="flex justify-center items-center flex-grow bg-fire px-5">
         <div
           className="flex flex-col items-center cursor-pointer my-5"
           onClick={() => chooseType("fire")}
@@ -27,7 +27,7 @@ const Main = () => {
           <img className="mt-2" src={Fire} alt="Fire Type" width="200rem" />
         </div>
       </div>
-      <div className="flex justify-center items-center flex-grow bg-water">
+      <div className="flex justify-center items-center flex-grow bg-water px-5">
         <div
           className="flex flex-col items-center cursor-pointer my-5"
           onClick={() => chooseType("water")}
@@ -36,7 +36,7 @@ const Main = () => {
           <img className="mt-2" src={Water} alt="Water Type" width="200rem" />
         </div>
       </div>
-      <div className="flex justify-center items-center flex-grow bg-grass">
+      <div className="flex justify-center items-center flex-grow bg-grass px-5">
         <div
           className="flex flex-col items-center cursor-pointer my-5"
           onClick={() => chooseType("grass")}
@@ -45,7 +45,7 @@ const Main = () => {
           <img className="mt-2" src={Grass} alt="Grass Type" width="200rem" />
         </div>
       </div>
-      <div className="flex justify-center items-center flex-grow bg-electric">
+      <div className="flex justify-center items-center flex-grow bg-electric px-5">
         <div
           className="flex flex-col items-center cursor-pointer my-5"
           onClick={() => chooseType("electric")}
