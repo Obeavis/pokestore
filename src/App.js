@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useSelector, useDispatch } from "react-redux";
+import Routes from "./utils/Routes";
+import Presentation from "components/Presentation";
+import Loader from "components/Loader";
 
 function App() {
+  const dispatch = useDispatch();
+  const { loading, openCart } = useSelector((state) => state.basicState);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${openCart ? "overflow-hidden" : ""}`}>
+      <Routes />
+      {openCart && (
+        <Presentation
+          onClick={() => dispatch({ type: "SET_OPEN_CART", payload: false })}
+        />
+      )}
+      {loading && <Loader />}
     </div>
   );
 }

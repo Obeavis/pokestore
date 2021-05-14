@@ -1,26 +1,47 @@
 {
   "name": "pokestore",
+  "author": "Otávio Bastilho",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://obeavis.github.io/pokestore",
+  "keywords": [
+    "react",
+    "redux",
+    "reduxsauce",
+    "tailwind",
+    "emotion"
+  ],
   "dependencies": {
     "@craco/craco": "^6.1.2",
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
     "@hot-loader/react-dom": "^17.0.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.1",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-js-pagination": "^3.0.3",
     "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "redux": "^4.1.0",
+    "redux-persist": "^6.0.0",
     "reduxsauce": "^1.2.0",
+    "sweetalert2": "^10.16.7",
+    "sweetalert2-react-content": "^3.3.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "craco build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
