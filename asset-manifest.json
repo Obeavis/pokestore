@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pokestore/static/css/main.717cd294.chunk.css",
-    "main.js": "/pokestore/static/js/main.3bf84c75.chunk.js",
-    "main.js.map": "/pokestore/static/js/main.3bf84c75.chunk.js.map",
+    "main.js": "/pokestore/static/js/main.b88a02b2.chunk.js",
+    "main.js.map": "/pokestore/static/js/main.b88a02b2.chunk.js.map",
     "runtime-main.js": "/pokestore/static/js/runtime-main.1644e96c.js",
     "runtime-main.js.map": "/pokestore/static/js/runtime-main.1644e96c.js.map",
     "static/js/2.d9237f5f.chunk.js": "/pokestore/static/js/2.d9237f5f.chunk.js",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.1644e96c.js",
     "static/js/2.d9237f5f.chunk.js",
     "static/css/main.717cd294.chunk.css",
-    "static/js/main.3bf84c75.chunk.js"
+    "static/js/main.b88a02b2.chunk.js"
   ]
 }
