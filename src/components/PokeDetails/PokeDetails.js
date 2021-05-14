@@ -14,9 +14,9 @@ const PokeDetails = ({ pokemon, variant, cartIcon }) => {
   };
 
   return pokemon === "404" ? (
-    <div className="container flex max-w-7xl pt-28 pb-5">
+    <div className="container flex flex-grow max-w-7xl pt-28 pb-5">
       <div className="flex flex-col items-center w-full py-8">
-        <span className="font-semibold text-3xl my-6 text-gray-800">
+        <span className="font-semibold text-3xl text-gray-800">
           Nenhum Pokémon encontrado
         </span>
         <img className="px-5 sm:px-0 py-10" src={Sad} alt="Sad Pikachu" />

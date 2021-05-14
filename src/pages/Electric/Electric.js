@@ -29,7 +29,7 @@ const Electric = () => {
   }, [dispatch, getByType, searchPokemon, history, params.pokeName]);
 
   return (
-    <div className="flex flex-col items-center bg-gray-default-light">
+    <div className="flex flex-col items-center min-h-screen bg-gray-default-light">
       <Header
         variant={"electric"}
         logo={{ image: ElectricIcon, width: "130rem" }}
